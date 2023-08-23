@@ -1,29 +1,27 @@
-# 582-vue-pinia
+# Movie Database (MEVN stack)
 
-## Project setup
-```
-npm install
-```
+## Planning
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### User feature
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- look for movies data (search/filter)
+- mark movies as seen (button)
+- leave comment
+- give rating
+- admin can add movie info
 
-### Run your unit tests
-```
-npm run test:unit
-```
+### Components
 
-### Lints and fixes files
-```
-npm run lint
-```
+-movie display (title+pic)
+-movie item(data info)
+-rating w/stars?
+-comment/review?
+-add movie info
+-nav/footer
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### View
+
+-MoviesList view (loop movie display components)
+-title view (movie item data, rating, comment components)
+-Admin, add movie info
++recommend/other movie view? (loop movie display on smaller banner style under title view)
