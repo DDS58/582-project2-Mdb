@@ -39,8 +39,10 @@ app.post("/", (req, res) => {
     try {
       const database = client.db("mongodemo");
       const student = database.collection("student");
-      const result = await student.insertOne(req.params);
+      // const result = await student.insertOne(req.params);
+      const result = await student.insertOne(req.body);
       console.log(result);
+      res.send(result);
     } finally {
       // Ensures that the client will close when you finish/error
       await client.close();
@@ -48,7 +50,7 @@ app.post("/", (req, res) => {
   }
   run().catch(console.dir);
 
-  res.send("Sent data via POST!");
+  // res.send("Sent data via POST!");
 });
 
 app.listen(port, () => {
