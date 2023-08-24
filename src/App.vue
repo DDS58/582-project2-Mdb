@@ -39,4 +39,22 @@ nav {
     }
   }
 }
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-card {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.movie-poster {
+  max-width: 100%;
+  height: auto;
+}
 </style>
