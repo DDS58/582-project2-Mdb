@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3001;
+const port = 3000;
 
 var cors = require("cors");
 app.use(cors());
@@ -19,9 +19,9 @@ app.get("/", (req, res) => {
   const client = new MongoClient(uri);
   async function run() {
     try {
-      const database = client.db("mongodemo");
-      const student = database.collection("student");
-      const result = await student.find({}).toArray();
+      const database = client.db("mdb");
+      const moviesdb = database.collection("moviesdb");
+      const result = await moviesdb.find({}).toArray();
       console.log(result);
       res.send(result);
     } finally {
@@ -37,10 +37,9 @@ app.post("/", (req, res) => {
   const client = new MongoClient(uri);
   async function run() {
     try {
-      const database = client.db("mongodemo");
-      const student = database.collection("student");
-      // const result = await student.insertOne(req.params);
-      const result = await student.insertOne(req.body);
+      const database = client.db("mdb");
+      const moviesdb = database.collection("moviesdb");
+      const result = await moviesdb.insertOne(req.body);
       console.log(result);
       res.send(result);
     } finally {
