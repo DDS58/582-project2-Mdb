@@ -9,7 +9,7 @@
 import MovieInfo from "@/components/MovieInfo.vue";
 
 export default {
-  name: "MoviesView",
+  name: "TitleView",
   components: {
     MovieInfo,
   },

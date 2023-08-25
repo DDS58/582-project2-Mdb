@@ -3,7 +3,7 @@
     <input
       v-model="searchTerm"
       type="text"
-      placeholder="Search by title..."
+      placeholder="Search by title, actors or genre..."
       @input="handleSearch"
     />
   </div>
