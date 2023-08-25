@@ -39,10 +39,25 @@ nav {
   }
 }
 
+.search-bar {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  width: 300px;
+}
+
 .movie-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  :hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
 }
 
 .movie-card {
@@ -52,6 +67,9 @@ nav {
   width: 200px;
   max-width: 200px;
   text-align: center;
+  :hover {
+    transform: scale(1);
+  }
 }
 
 .movie-title {
