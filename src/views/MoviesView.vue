@@ -1,25 +1,17 @@
 <template>
-  <div class="movies">
-    <h1>This is a Movies page</h1>
+  <div class="movie-detail-view">
+    <router-link to="/" class="back-link">Back to Movie List</router-link>
+    <MovieInfo :imdbID="$route.params.id" />
   </div>
-  <div>
-    Title :
-    <!-- {{ $route.params.moviesTitle }}  -->
-    with ID {{ $route.params.id }}
-  </div>
-  <div>movie component</div>
-  <button @click="next">next title</button>
 </template>
 
 <script>
+import MovieInfo from "@/components/MovieInfo.vue";
+
 export default {
   name: "MoviesView",
-
-  methods: {
-    next() {
-      const id = parseInt(this.$route.params.id) + 1;
-      this.$router.push({ path: `/movies/${id}` });
-    },
+  components: {
+    MovieInfo,
   },
 };
 </script>

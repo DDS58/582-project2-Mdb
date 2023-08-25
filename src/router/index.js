@@ -6,7 +6,7 @@ import MoviesView from "../views/MoviesView.vue";
 const routes = [
   {
     path: "/",
-    name: "home",
+    name: "MovieList",
     component: HomeView,
   },
   {
@@ -16,8 +16,9 @@ const routes = [
   },
   {
     path: "/movies/:id",
-    name: "movies",
+    name: "MovieInfo",
     component: MoviesView,
+    props: true,
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.

@@ -5,6 +5,7 @@
       :key="movie.imdbID"
       :title="movie.Title"
       :poster-url="movie.Poster"
+      :imdbID="movie.imdbID"
     />
   </div>
 </template>

@@ -15,13 +15,15 @@ const uri =
 // parse application/json
 app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
+app.get("/movies/:imdbID", (req, res) => {
   const client = new MongoClient(uri);
+  const imdbID = req.params.imdbID;
   async function run() {
     try {
       const database = client.db("mdb");
       const moviesdb = database.collection("moviesdb");
-      const result = await moviesdb.find({}).toArray();
+      // const result = await moviesdb.find({}).toArray();
+      const result = await moviesdb.findOne({ imdbID });
       console.log(result);
       res.send(result);
     } finally {
