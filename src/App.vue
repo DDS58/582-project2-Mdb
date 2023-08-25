@@ -68,4 +68,31 @@ nav {
   width: 180px;
   margin: 0 auto;
 }
+
+.movie-detail {
+  display: flex;
+  margin: 20px;
+  .movie-poster {
+    height: auto;
+    width: auto;
+    max-height: 500px;
+  }
+  .movie-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+}
+.movie-detail-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movie-detail-right {
+  flex: 2;
+  padding: 20px;
+  font-size: 14px;
+  margin: 5px 0;
+  text-align: left;
+}
 </style>
