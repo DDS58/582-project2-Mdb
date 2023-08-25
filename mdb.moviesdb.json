@@ -1,0 +1,976 @@
+[{
+  "_id": {
+    "$oid": "64e77ef6588563184a66831c"
+  },
+  "Title": "Kung Fu Hustle",
+  "Year": "2004",
+  "Rated": "R",
+  "Released": "22 Apr 2005",
+  "Runtime": "99 min",
+  "Genre": "Action, Comedy, Fantasy",
+  "Director": "Stephen Chow",
+  "Writer": "Stephen Chow, Kan-Cheung Tsang, Xin Huo",
+  "Actors": "Stephen Chow, Wah Yuen, Qiu Yuen",
+  "Plot": "In Shanghai, China in the 1940s, a wannabe gangster aspires to join the notorious 'Axe Gang' while residents of a housing complex exhibit extraordinary powers in defending their turf.",
+  "Language": "Cantonese, Mandarin",
+  "Country": "Hong Kong, China, United States",
+  "Awards": "Nominated for 1 BAFTA Award25 wins & 47 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjZiOTNlMzYtZWYwZS00YWJjLTk5NDgtODkwNjRhMDI0MjhjXkEyXkFqcGdeQXVyMjgyNjk3MzE@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "7.7/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "91%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "78/100"
+    }
+  ],
+  "Metascore": "78",
+  "imdbRating": "7.7",
+  "imdbVotes": "145,976",
+  "imdbID": "tt0373074",
+  "Type": "movie",
+  "DVD": "16 Apr 2012",
+  "BoxOffice": "$17,108,591",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True",
+  "allComments": [
+    {
+      "id": 1,
+      "name": "John",
+      "comment": "This is a comment",
+      "date": "2021-01-01",
+      "movieId": 1
+    },
+    {
+      "id": 2,
+      "name": "Mary",
+      "comment": "This is another comment",
+      "date": "2021-01-02",
+      "movieId": 1
+    },
+    {
+      "id": 3,
+      "name": "John",
+      "comment": "This is a comment",
+      "date": "2021-01-01",
+      "movieId": 1
+    },
+    {
+      "id": 4,
+      "name": "Mary",
+      "comment": "This is another comment",
+      "date": "2021-01-02",
+      "movieId": 1
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64e781fa588563184a66831e"
+  },
+  "Title": "Shaolin Soccer",
+  "Year": "2001",
+  "Rated": "PG",
+  "Released": "05 Jul 2001",
+  "Runtime": "87 min",
+  "Genre": "Action, Comedy, Fantasy",
+  "Director": "Stephen Chow",
+  "Writer": "Stephen Chow, Kan-Cheung Tsang, Min-Hun Fung",
+  "Actors": "Stephen Chow, Wei Zhao, Yat-Fei Wong",
+  "Plot": "A young Shaolin follower reunites with his discouraged brothers to form a soccer team using their martial art skills to their advantage.",
+  "Language": "Cantonese, Mandarin",
+  "Country": "Hong Kong, China",
+  "Awards": "12 wins & 19 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMjhlMWE5NzktNmE4Ny00ZWFlLTk5MzUtZDZhZmQ0YmVlNDI0XkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "7.3/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "89%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "68/100"
+    }
+  ],
+  "Metascore": "68",
+  "imdbRating": "7.3",
+  "imdbVotes": "84,839",
+  "imdbID": "tt0286112",
+  "Type": "movie",
+  "DVD": "23 May 2016",
+  "BoxOffice": "$489,600",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True",
+  "allComments": [
+    {
+      "id": 1,
+      "name": "John",
+      "comment": "This is a comment",
+      "date": "2021-01-01",
+      "movieId": 2
+    },
+    {
+      "id": 2,
+      "name": "Mary",
+      "comment": "This is another comment",
+      "date": "2021-01-02",
+      "movieId": 2
+    },
+    {
+      "id": 3,
+      "name": "John",
+      "comment": "This is a comment",
+      "date": "2021-01-01",
+      "movieId": 2
+    },
+    {
+      "id": 4,
+      "name": "Mary",
+      "comment": "This is another comment",
+      "date": "2021-01-02",
+      "movieId": 2
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64e78284588563184a66831f"
+  },
+  "Title": "Oldboy",
+  "Year": "2003",
+  "Rated": "R",
+  "Released": "21 Nov 2003",
+  "Runtime": "120 min",
+  "Genre": "Action, Drama, Mystery",
+  "Director": "Park Chan-wook",
+  "Writer": "Garon Tsuchiya, Nobuaki Minegishi, Park Chan-wook",
+  "Actors": "Choi Min-sik, Yoo Ji-tae, Kang Hye-jeong",
+  "Plot": "After being kidnapped and imprisoned for fifteen years, Oh Dae-Su is released, only to find that he must find his captor in five days.",
+  "Language": "Korean",
+  "Country": "South Korea",
+  "Awards": "40 wins & 27 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTI3NTQyMzU5M15BMl5BanBnXkFtZTcwMTM2MjgyMQ@@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.4/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "82%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "77/100"
+    }
+  ],
+  "Metascore": "77",
+  "imdbRating": "8.4",
+  "imdbVotes": "603,699",
+  "imdbID": "tt0364569",
+  "Type": "movie",
+  "DVD": "01 Apr 2017",
+  "BoxOffice": "$707,481",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True",
+  "allComments": [
+    {
+      "id": 1,
+      "name": "John",
+      "comment": "This is a comment",
+      "date": "2021-01-01",
+      "movieId": 3
+    },
+    {
+      "id": 2,
+      "name": "Mary",
+      "comment": "This is another comment",
+      "date": "2021-01-02",
+      "movieId": 3
+    },
+    {
+      "id": 3,
+      "name": "John",
+      "comment": "This is a comment",
+      "date": "2021-01-01",
+      "movieId": 3
+    },
+    {
+      "id": 4,
+      "name": "Mary",
+      "comment": "This is another comment",
+      "date": "2021-01-02",
+      "movieId": 3
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64e89e088d7a2d292f8b0297"
+  },
+  "Title": "Princess Mononoke",
+  "Year": "1997",
+  "Rated": "PG-13",
+  "Released": "19 Dec 1997",
+  "Runtime": "134 min",
+  "Genre": "Animation, Action, Adventure",
+  "Director": "Hayao Miyazaki",
+  "Writer": "Hayao Miyazaki, Neil Gaiman",
+  "Actors": "Yôji Matsuda, Yuriko Ishida, Yûko Tanaka",
+  "Plot": "On a journey to find the cure for a Tatarigami's curse, Ashitaka finds himself in the middle of a war between the forest gods and Tatara, a mining colony. In this quest he also meets San, the Mononoke Hime.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "14 wins & 6 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNTZkYmI0MmEtNGFlZC00OWZjLWFjMmItMjk1OWZkOWJiZGVjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.3/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "93%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "76/100"
+    }
+  ],
+  "Metascore": "76",
+  "imdbRating": "8.3",
+  "imdbVotes": "411,695",
+  "imdbID": "tt0119698",
+  "Type": "movie",
+  "DVD": "16 Dec 2019",
+  "BoxOffice": "$4,845,631",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e89e968d7a2d292f8b0298"
+  },
+  "Title": "Chips",
+  "Year": "2012",
+  "Rated": "N/A",
+  "Released": "07 May 2012",
+  "Runtime": "68 min",
+  "Genre": "Comedy, Drama",
+  "Director": "Yoshihiro Nakamura",
+  "Writer": "Kôtarô Isaka, Yoshihiro Nakamura",
+  "Actors": "Gaku Hamada, Fumino Kimura, Nao Ômori",
+  "Plot": "Tadashi Imamura is a burglar who idolizes Ozaki, a star baseball player he shares a birthday with. One day he realizes their connection is much deeper than that and decides to find out more.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "N/A",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNTg3Y2M4OTktZDA5Mi00NDJkLWJlMjAtMTIyZDU0MGIxNTQwXkEyXkFqcGdeQXVyMTc2MzA2MjU@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "6.8/10"
+    }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "6.8",
+  "imdbVotes": "215",
+  "imdbID": "tt2011351",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e89eb38d7a2d292f8b0299"
+  },
+  "Title": "Fish Story",
+  "Year": "2009",
+  "Rated": "N/A",
+  "Released": "20 Mar 2009",
+  "Runtime": "113 min",
+  "Genre": "Action, Comedy, Music",
+  "Director": "Yoshihiro Nakamura",
+  "Writer": "Kôtarô Isaka, Tamio Hayashi",
+  "Actors": "Atsushi Itô, Kiyohiko Shibukawa, Noriko Eguchi",
+  "Plot": "Several seemingly unrelated but surprisingly intertwined tales reveal how a Japanese band that independently invented punk rock in 1975 is, 37 years later, connected to a comet that is about to destroy the world.",
+  "Language": "Japanese",
+  "Country": "Japan",
+  "Awards": "2 wins & 1 nomination",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTY0NzA5NTAzN15BMl5BanBnXkFtZTgwMzg0MTE0MjE@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "7.5/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "100%"
+    }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.5",
+  "imdbVotes": "3,366",
+  "imdbID": "tt1244666",
+  "Type": "movie",
+  "DVD": "N/A",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e89f228d7a2d292f8b029a"
+  },
+  "Title": "Harry Potter and the Deathly Hallows: Part 1",
+  "Year": "2010",
+  "Rated": "PG-13",
+  "Released": "19 Nov 2010",
+  "Runtime": "146 min",
+  "Genre": "Adventure, Family, Fantasy",
+  "Director": "David Yates",
+  "Writer": "Steve Kloves, J.K. Rowling",
+  "Actors": "Daniel Radcliffe, Emma Watson, Rupert Grint",
+  "Plot": "As Harry, Ron and Hermione race against time and evil to destroy the Horcruxes, they uncover the existence of the three most powerful objects in the wizarding world: the Deathly Hallows.",
+  "Language": "English, Latin",
+  "Country": "United Kingdom, United States",
+  "Awards": "Nominated for 2 Oscars. 15 wins & 55 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ2OTE1Mjk0N15BMl5BanBnXkFtZTcwODE3MDAwNA@@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "7.7/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "77%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "65/100"
+    }
+  ],
+  "Metascore": "65",
+  "imdbRating": "7.7",
+  "imdbVotes": "573,854",
+  "imdbID": "tt0926084",
+  "Type": "movie",
+  "DVD": "19 Jul 2013",
+  "BoxOffice": "$296,374,621",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e89f3e8d7a2d292f8b029b"
+  },
+  "Title": "Avengers: Endgame",
+  "Year": "2019",
+  "Rated": "PG-13",
+  "Released": "26 Apr 2019",
+  "Runtime": "181 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "Anthony Russo, Joe Russo",
+  "Writer": "Christopher Markus, Stephen McFeely, Stan Lee",
+  "Actors": "Robert Downey Jr., Chris Evans, Mark Ruffalo",
+  "Plot": "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+  "Language": "English, Japanese, Xhosa, German",
+  "Country": "United States",
+  "Awards": "Nominated for 1 Oscar. 70 wins & 133 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.4/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "94%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "78/100"
+    }
+  ],
+  "Metascore": "78",
+  "imdbRating": "8.4",
+  "imdbVotes": "1,201,552",
+  "imdbID": "tt4154796",
+  "Type": "movie",
+  "DVD": "30 Jul 2019",
+  "BoxOffice": "$858,373,000",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e89f648d7a2d292f8b029c"
+  },
+  "Title": "Symbol",
+  "Year": "2009",
+  "Rated": "Not Rated",
+  "Released": "12 Dec 2018",
+  "Runtime": "93 min",
+  "Genre": "Comedy, Fantasy, Mystery",
+  "Director": "Hitoshi Matsumoto",
+  "Writer": "Hitoshi Matsumoto, Mitsuyoshi Takasu",
+  "Actors": "Hitoshi Matsumoto, David Quintero, Luis Accinelli",
+  "Plot": "A man wakes up in a white room empty other than buttons on the walls, he must find out which button to push to get what he wants.",
+  "Language": "Russian, Japanese, Spanish, English",
+  "Country": "Japan",
+  "Awards": "5 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNjI1MzAzNDk1MF5BMl5BanBnXkFtZTgwMTU3MzQ5NjE@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "7.0/10"
+    }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "7.0",
+  "imdbVotes": "4,172",
+  "imdbID": "tt1410261",
+  "Type": "movie",
+  "DVD": "23 Aug 2018",
+  "BoxOffice": "N/A",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e89f8e8d7a2d292f8b029d"
+  },
+  "Title": "The Matrix",
+  "Year": "1999",
+  "Rated": "R",
+  "Released": "31 Mar 1999",
+  "Runtime": "136 min",
+  "Genre": "Action, Sci-Fi",
+  "Director": "Lana Wachowski, Lilly Wachowski",
+  "Writer": "Lilly Wachowski, Lana Wachowski",
+  "Actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+  "Plot": "When a beautiful stranger leads computer hacker Neo to a forbidding underworld, he discovers the shocking truth--the life he knows is the elaborate deception of an evil cyber-intelligence.",
+  "Language": "English",
+  "Country": "United States, Australia",
+  "Awards": "Won 4 Oscars. 42 wins & 52 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.7/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "83%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "73/100"
+    }
+  ],
+  "Metascore": "73",
+  "imdbRating": "8.7",
+  "imdbVotes": "1,974,027",
+  "imdbID": "tt0133093",
+  "Type": "movie",
+  "DVD": "01 Jan 2009",
+  "BoxOffice": "$172,076,928",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e89fae8d7a2d292f8b029e"
+  },
+  "Title": "Home Alone",
+  "Year": "1990",
+  "Rated": "PG",
+  "Released": "16 Nov 1990",
+  "Runtime": "103 min",
+  "Genre": "Comedy, Family",
+  "Director": "Chris Columbus",
+  "Writer": "John Hughes",
+  "Actors": "Macaulay Culkin, Joe Pesci, Daniel Stern",
+  "Plot": "An eight-year-old troublemaker, mistakenly left home alone, must defend his home against a pair of burglars on Christmas eve.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Nominated for 2 Oscars. 11 wins & 6 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMzFkM2YwOTQtYzk2Mi00N2VlLWE3NTItN2YwNDg1YmY0ZDNmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "7.7/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "66%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "63/100"
+    }
+  ],
+  "Metascore": "63",
+  "imdbRating": "7.7",
+  "imdbVotes": "608,724",
+  "imdbID": "tt0099785",
+  "Type": "movie",
+  "DVD": "01 Mar 2013",
+  "BoxOffice": "$285,761,243",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a0288d7a2d292f8b029f"
+  },
+  "Title": "Breaking Bad",
+  "Year": "2008–2013",
+  "Rated": "TV-MA",
+  "Released": "20 Jan 2008",
+  "Runtime": "49 min",
+  "Genre": "Crime, Drama, Thriller",
+  "Director": "N/A",
+  "Writer": "Vince Gilligan",
+  "Actors": "Bryan Cranston, Aaron Paul, Anna Gunn",
+  "Plot": "A chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine with a former student in order to secure his family's future.",
+  "Language": "English, Spanish",
+  "Country": "United States",
+  "Awards": "Won 16 Primetime Emmys. 155 wins & 247 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "9.5/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "96%"
+    }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "9.5",
+  "imdbVotes": "2,009,599",
+  "imdbID": "tt0903747",
+  "Type": "series",
+  "totalSeasons": "5",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a0388d7a2d292f8b02a0"
+  },
+  "Title": "Dexter",
+  "Year": "2006–2013",
+  "Rated": "TV-MA",
+  "Released": "01 Oct 2006",
+  "Runtime": "53 min",
+  "Genre": "Crime, Drama, Mystery",
+  "Director": "N/A",
+  "Writer": "James Manos Jr.",
+  "Actors": "Michael C. Hall, Jennifer Carpenter, David Zayas",
+  "Plot": "He's smart. He's lovable. He's Dexter Morgan, America's favorite serial killer, who spends his days solving crimes and nights committing them.",
+  "Language": "English, Spanish",
+  "Country": "United States",
+  "Awards": "Won 4 Primetime Emmys. 53 wins & 197 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZjkzMmU5MjMtODllZS00OTA5LTk2ZTEtNjdhYjZhMDA5ZTRhXkEyXkFqcGdeQXVyOTA3MTMyOTk@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.7/10"
+    }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.7",
+  "imdbVotes": "743,063",
+  "imdbID": "tt0773262",
+  "Type": "series",
+  "totalSeasons": "8",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a05d8d7a2d292f8b02a1"
+  },
+  "Title": "The Dark Knight",
+  "Year": "2008",
+  "Rated": "PG-13",
+  "Released": "18 Jul 2008",
+  "Runtime": "152 min",
+  "Genre": "Action, Crime, Drama",
+  "Director": "Christopher Nolan",
+  "Writer": "Jonathan Nolan, Christopher Nolan, David S. Goyer",
+  "Actors": "Christian Bale, Heath Ledger, Aaron Eckhart",
+  "Plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+  "Language": "English, Mandarin",
+  "Country": "United States, United Kingdom",
+  "Awards": "Won 2 Oscars. 162 wins & 164 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "9.0/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "94%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "84/100"
+    }
+  ],
+  "Metascore": "84",
+  "imdbRating": "9.0",
+  "imdbVotes": "2,755,440",
+  "imdbID": "tt0468569",
+  "Type": "movie",
+  "DVD": "14 Jun 2010",
+  "BoxOffice": "$534,987,076",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a0858d7a2d292f8b02a2"
+  },
+  "Title": "Forrest Gump",
+  "Year": "1994",
+  "Rated": "PG-13",
+  "Released": "06 Jul 1994",
+  "Runtime": "142 min",
+  "Genre": "Drama, Romance",
+  "Director": "Robert Zemeckis",
+  "Writer": "Winston Groom, Eric Roth",
+  "Actors": "Tom Hanks, Robin Wright, Gary Sinise",
+  "Plot": "The history of the United States from the 1950s to the '70s unfolds from the perspective of an Alabama man with an IQ of 75, who yearns to be reunited with his childhood sweetheart.",
+  "Language": "English",
+  "Country": "United States",
+  "Awards": "Won 6 Oscars. 50 wins & 74 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.8/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "71%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "82/100"
+    }
+  ],
+  "Metascore": "82",
+  "imdbRating": "8.8",
+  "imdbVotes": "2,162,134",
+  "imdbID": "tt0109830",
+  "Type": "movie",
+  "DVD": "01 Aug 2013",
+  "BoxOffice": "$330,455,270",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a09b8d7a2d292f8b02a3"
+  },
+  "Title": "Nirvana in Fire",
+  "Year": "2015–2018",
+  "Rated": "TV-14",
+  "Released": "19 Sep 2015",
+  "Runtime": "45 min",
+  "Genre": "Action, Drama, Fantasy",
+  "Director": "N/A",
+  "Writer": "N/A",
+  "Actors": "Kei Gambit, Ge Hu, Tu-Te-Ha-Meng",
+  "Plot": "Story about a son's search for his family's lost honor.",
+  "Language": "Mandarin",
+  "Country": "China",
+  "Awards": "38 wins & 25 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BMWVhZmNhNjgtZGY3Zi00Y2IzLWFkZmEtMDQ1MDUyMGQ0YjlhXkEyXkFqcGdeQXVyMTAxODcxMDI3._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.9/10"
+    }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "8.9",
+  "imdbVotes": "2,562",
+  "imdbID": "tt5141800",
+  "Type": "series",
+  "totalSeasons": "2",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a0b38d7a2d292f8b02a4"
+  },
+  "Title": "Léon: The Professional",
+  "Year": "1994",
+  "Rated": "R",
+  "Released": "18 Nov 1994",
+  "Runtime": "110 min",
+  "Genre": "Action, Crime, Drama",
+  "Director": "Luc Besson",
+  "Writer": "Luc Besson",
+  "Actors": "Jean Reno, Gary Oldman, Natalie Portman",
+  "Plot": "12-year-old Mathilda is reluctantly taken in by Léon, a professional assassin, after her family is murdered. An unusual relationship forms as she becomes his protégée and learns the assassin's trade.",
+  "Language": "English, Italian, French",
+  "Country": "France, United States",
+  "Awards": "5 wins & 16 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BOTgyMWQ0ZWUtN2Q2MS00NmY0LWI3OWMtNjFkMzZlNDZjNTk0XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.5/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "74%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "64/100"
+    }
+  ],
+  "Metascore": "64",
+  "imdbRating": "8.5",
+  "imdbVotes": "1,201,650",
+  "imdbID": "tt0110413",
+  "Type": "movie",
+  "DVD": "01 Jan 2013",
+  "BoxOffice": "$19,501,238",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a0ce8d7a2d292f8b02a5"
+  },
+  "Title": "Parasite",
+  "Year": "2019",
+  "Rated": "R",
+  "Released": "08 Nov 2019",
+  "Runtime": "132 min",
+  "Genre": "Drama, Thriller",
+  "Director": "Bong Joon Ho",
+  "Writer": "Bong Joon Ho, Han Jin-won",
+  "Actors": "Song Kang-ho, Lee Sun-kyun, Cho Yeo-jeong",
+  "Plot": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
+  "Language": "Korean, English",
+  "Country": "South Korea",
+  "Awards": "Won 4 Oscars. 306 wins & 264 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.5/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "99%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "96/100"
+    }
+  ],
+  "Metascore": "96",
+  "imdbRating": "8.5",
+  "imdbVotes": "874,094",
+  "imdbID": "tt6751668",
+  "Type": "movie",
+  "DVD": "11 Oct 2019",
+  "BoxOffice": "$53,369,749",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a0e98d7a2d292f8b02a6"
+  },
+  "Title": "Infernal Affairs",
+  "Year": "2002",
+  "Rated": "R",
+  "Released": "12 Dec 2002",
+  "Runtime": "101 min",
+  "Genre": "Action, Crime, Drama",
+  "Director": "Andrew Lau, Alan Mak",
+  "Writer": "Alan Mak, Felix Chong",
+  "Actors": "Andy Lau, Tony Leung Chiu-wai, Anthony Chau-Sang Wong",
+  "Plot": "A story between a mole in the police department and an undercover cop. Their objectives are the same: to find out who is the mole, and who is the cop.",
+  "Language": "Cantonese, English, Thai",
+  "Country": "Hong Kong",
+  "Awards": "24 wins & 26 nominations",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZWM1MTdhM2YtNjgwZS00YjQ3LTk3NTQtMzQ1NDE3YzZlODFlXkEyXkFqcGdeQXVyMTI3ODAyMzE2._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.0/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "94%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "75/100"
+    }
+  ],
+  "Metascore": "75",
+  "imdbRating": "8.0",
+  "imdbVotes": "128,379",
+  "imdbID": "tt0338564",
+  "Type": "movie",
+  "DVD": "08 Nov 2016",
+  "BoxOffice": "$169,659",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a0fe8d7a2d292f8b02a7"
+  },
+  "Title": "The Lord of the Rings: The Two Towers",
+  "Year": "2002",
+  "Rated": "PG-13",
+  "Released": "18 Dec 2002",
+  "Runtime": "179 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "Peter Jackson",
+  "Writer": "J.R.R. Tolkien, Fran Walsh, Philippa Boyens",
+  "Actors": "Elijah Wood, Ian McKellen, Viggo Mortensen",
+  "Plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+  "Language": "English, Sindarin, Old English",
+  "Country": "New Zealand, United States",
+  "Awards": "Won 2 Oscars. 130 wins & 138 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BZGMxZTdjZmYtMmE2Ni00ZTdkLWI5NTgtNjlmMjBiNzU2MmI5XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.8/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "95%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "87/100"
+    }
+  ],
+  "Metascore": "87",
+  "imdbRating": "8.8",
+  "imdbVotes": "1,719,573",
+  "imdbID": "tt0167261",
+  "Type": "movie",
+  "DVD": "28 Jun 2011",
+  "BoxOffice": "$342,952,511",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a1148d7a2d292f8b02a8"
+  },
+  "Title": "Ikiru",
+  "Year": "1952",
+  "Rated": "Not Rated",
+  "Released": "25 Mar 1956",
+  "Runtime": "143 min",
+  "Genre": "Drama",
+  "Director": "Akira Kurosawa",
+  "Writer": "Akira Kurosawa, Shinobu Hashimoto, Hideo Oguni",
+  "Actors": "Takashi Shimura, Nobuo Kaneko, Shin'ichi Himori",
+  "Plot": "A bureaucrat tries to find meaning in his life after he discovers he has terminal cancer.",
+  "Language": "Japanese, Latin, English, French",
+  "Country": "Japan",
+  "Awards": "Nominated for 1 BAFTA Award6 wins & 2 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BYWM1YmZkNTctZDAwNy00ZTY4LWFjMTktYzU4ZjViMmU1OTJmXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "8.3/10"
+    },
+    {
+      "Source": "Rotten Tomatoes",
+      "Value": "98%"
+    },
+    {
+      "Source": "Metacritic",
+      "Value": "92/100"
+    }
+  ],
+  "Metascore": "92",
+  "imdbRating": "8.3",
+  "imdbVotes": "83,057",
+  "imdbID": "tt0044741",
+  "Type": "movie",
+  "DVD": "27 Oct 2015",
+  "BoxOffice": "$60,239",
+  "Production": "N/A",
+  "Website": "N/A",
+  "Response": "True"
+},
+{
+  "_id": {
+    "$oid": "64e8a1c48d7a2d292f8b02a9"
+  },
+  "Title": "Game of Thrones",
+  "Year": "2011–2019",
+  "Rated": "TV-MA",
+  "Released": "17 Apr 2011",
+  "Runtime": "57 min",
+  "Genre": "Action, Adventure, Drama",
+  "Director": "N/A",
+  "Writer": "David Benioff, D.B. Weiss",
+  "Actors": "Emilia Clarke, Peter Dinklage, Kit Harington",
+  "Plot": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for a millennia.",
+  "Language": "English",
+  "Country": "United States, United Kingdom",
+  "Awards": "Won 59 Primetime Emmys. 389 wins & 634 nominations total",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg",
+  "Ratings": [
+    {
+      "Source": "Internet Movie Database",
+      "Value": "9.2/10"
+    }
+  ],
+  "Metascore": "N/A",
+  "imdbRating": "9.2",
+  "imdbVotes": "2,184,817",
+  "imdbID": "tt0944947",
+  "Type": "series",
+  "totalSeasons": "8",
+  "Response": "True"
+}]
