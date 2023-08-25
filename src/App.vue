@@ -49,11 +49,23 @@ nav {
   border: 1px solid black;
   padding: 10px;
   margin: 10px;
+  width: 200px;
+  max-width: 200px;
   text-align: center;
+}
+
+.movie-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .movie-poster {
   max-width: 100%;
-  height: auto;
+  height: 260px;
+  width: 180px;
+  margin: 0 auto;
 }
 </style>
