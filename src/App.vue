@@ -2,12 +2,7 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about/">About</router-link> |
-    <!-- <router-link to="/movies/1">title1</router-link> |
-    <router-link to="/movies/2">title2</router-link> | -->
   </nav>
-  <!-- <div v-for="x in [1, 2, 3, 4, 5, 6, 7, 8]" :key="x">
-    <router-link :to="'/movies/' + x">movies {{ x }}</router-link>
-  </div> -->
   <router-view />
 </template>
 

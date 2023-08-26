@@ -1,4 +1,4 @@
-# Movie Database (MEVN stack)
+# Mdb My Movie Database (MEVN stack)
 
 ## Planning
 
@@ -12,16 +12,52 @@
 
 ### Components
 
--movie display (title+pic)
--movie item(data info)
--rating w/stars?
--comment/review?
--add movie info
--nav/footer
+- movie display (title+pic)
+- moviesList (loop movie display components)
+- search bar
+- movie item(data info)
+- rating w/stars?
+- comment/review?
+- add movie info
+- nav/footer
 
 ### View
 
--MoviesList view (loop movie display components)
--title view (movie item data, rating, comment components)
--Admin, add movie info
-+recommend/other movie view? (loop movie display on smaller banner style under title view)
+- home view (movieslist, search bar)
+- title view (movie item data, rating, comment components)
+- Admin, add movie info
+- +recommend/other movie view? (loop movie display on smaller banner style under title view)
+
+## Project setup
+
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+
+```
+npm run build
+```
+
+### Run your unit tests
+
+```
+npm run test:unit
+```
+
+### Lints and fixes files
+
+```
+npm run lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://cli.vuejs.org/config/).
