@@ -108,4 +108,24 @@ input {
   margin: 5px 0;
   text-align: left;
 }
+
+.usersInput button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.usersInput textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 4px;
+  resize: none;
+  margin-top: 4px;
+}
 </style>

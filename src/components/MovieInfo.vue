@@ -20,12 +20,15 @@
       <p><strong>Runtime:</strong> {{ fetchedMovie.Runtime }}</p>
       <p><strong>Writer:</strong> {{ fetchedMovie.Writer }}</p>
       <p><strong>imdbRating:</strong> {{ fetchedMovie.imdbRating }}</p>
-      <MarkAsSeenButton
-        :imdbID="imdbID"
-        :seen="fetchedMovie.watched"
-        @update:seen="updateSeenStatus"
-      />
-      <RateDown @rating-selected="updateUserRating" />
+      <div class="usersInput">
+        <MarkAsSeenButton
+          :imdbID="imdbID"
+          :seen="fetchedMovie.watched"
+          @update:seen="updateSeenStatus"
+        />
+        <RateDown @rating-selected="updateUserRating" />
+        <UserReviewInput @review-submitted="submitUserReview" />
+      </div>
     </div>
     <!-- <p><strong>allComments:</strong> {{ fetchedMovie.allComments }}</p> -->
   </div>
@@ -35,11 +38,13 @@
 <script>
 import MarkAsSeenButton from "@/components/MarkAsSeenButton.vue";
 import RateDown from "@/components/RateDown.vue";
+import UserReviewInput from "@/components/UserReviewInput.vue";
 
 export default {
   components: {
     MarkAsSeenButton,
     RateDown,
+    UserReviewInput,
   },
   props: {
     imdbID: String,
@@ -73,6 +78,9 @@ export default {
     },
     updateUserRating(newRating) {
       this.fetchedMovie.userRating = newRating;
+    },
+    submitUserReview(review) {
+      this.fetchedMovie.userReview = review;
     },
   },
 };

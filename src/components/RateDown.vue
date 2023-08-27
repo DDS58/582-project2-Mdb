@@ -12,9 +12,10 @@ export default {
   data() {
     return {
       ratings: Array.from({ length: 10 }, (_, index) => index + 1),
-      selectedRating: 1,
+      selectedRating: 10,
     };
   },
+  emits: ["rating-selected"],
   methods: {
     selectRating() {
       this.$emit("rating-selected", this.selectedRating);
