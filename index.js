@@ -50,6 +50,27 @@ app.get("/movies/:imdbID", (req, res) => {
   run().catch(console.dir);
 });
 
+app.patch("/movies/:imdbID", async (req, res) => {
+  const client = new MongoClient(uri);
+
+  try {
+    await client.connect();
+    const database = client.db("mdb");
+    const moviesdb = database.collection("moviesdb");
+
+    const imdbID = req.params.imdbID;
+    const { watched } = req.body;
+
+    const result = await moviesdb.updateOne({ imdbID }, { $set: { watched } });
+    console.log(result);
+    res.send(result);
+  } catch (error) {
+    console.error("Error updating movie:", error);
+  } finally {
+    await client.close();
+  }
+});
+
 app.post("/", (req, res) => {
   console.log(req.body);
   const client = new MongoClient(uri);

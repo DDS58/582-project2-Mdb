@@ -20,6 +20,11 @@
       <p><strong>Runtime:</strong> {{ fetchedMovie.Runtime }}</p>
       <p><strong>Writer:</strong> {{ fetchedMovie.Writer }}</p>
       <p><strong>imdbRating:</strong> {{ fetchedMovie.imdbRating }}</p>
+      <MarkAsSeenButton
+        :imdbID="imdbID"
+        :seen="fetchedMovie.watched"
+        @update:seen="updateSeenStatus"
+      />
     </div>
     <!-- <p><strong>allComments:</strong> {{ fetchedMovie.allComments }}</p> -->
   </div>
@@ -27,13 +32,20 @@
 </template>
 
 <script>
+import MarkAsSeenButton from "@/components/MarkAsSeenButton.vue";
+
 export default {
+  components: {
+    MarkAsSeenButton,
+  },
   props: {
     imdbID: String,
   },
   data() {
     return {
-      fetchedMovie: null,
+      fetchedMovie: {
+        watched: false,
+      },
     };
   },
   created() {
@@ -52,6 +64,9 @@ export default {
         console.error("Error fetching movie data:", error);
         this.fetchedMovie = null;
       }
+    },
+    updateSeenStatus(newSeenStatus) {
+      this.fetchedMovie.watched = newSeenStatus;
     },
   },
 };
