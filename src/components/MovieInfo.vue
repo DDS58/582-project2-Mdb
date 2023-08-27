@@ -25,6 +25,7 @@
         :seen="fetchedMovie.watched"
         @update:seen="updateSeenStatus"
       />
+      <RateDown @rating-selected="updateUserRating" />
     </div>
     <!-- <p><strong>allComments:</strong> {{ fetchedMovie.allComments }}</p> -->
   </div>
@@ -33,10 +34,12 @@
 
 <script>
 import MarkAsSeenButton from "@/components/MarkAsSeenButton.vue";
+import RateDown from "@/components/RateDown.vue";
 
 export default {
   components: {
     MarkAsSeenButton,
+    RateDown,
   },
   props: {
     imdbID: String,
@@ -67,6 +70,9 @@ export default {
     },
     updateSeenStatus(newSeenStatus) {
       this.fetchedMovie.watched = newSeenStatus;
+    },
+    updateUserRating(newRating) {
+      this.fetchedMovie.userRating = newRating;
     },
   },
 };
