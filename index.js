@@ -114,7 +114,7 @@ app.put("/:id", (req, res) => {
   run().catch(console.dir);
 });
 
-app.delete("/:id", (req, res) => {
+app.delete("/movies/:imdbID", (req, res) => {
   const client = new MongoClient(uri);
 
   async function run() {
@@ -123,7 +123,7 @@ app.delete("/:id", (req, res) => {
       const moviesdb = database.collection("moviesdb");
 
       const result = await moviesdb.deleteOne({
-        _id: new ObjectId(req.params.id),
+        imdbID: req.params.imdbID,
       });
 
       console.log(result);

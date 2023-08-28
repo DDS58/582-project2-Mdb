@@ -29,6 +29,7 @@
         <RateDown @rating-selected="updateUserRating" />
         <UserReviewInput @review-submitted="submitUserReview" />
       </div>
+      <DeleteMovieButton :imdbID="imdbID" :onDelete="handleMovieDeleted" />
     </div>
     <!-- <p><strong>allComments:</strong> {{ fetchedMovie.allComments }}</p> -->
   </div>
@@ -39,12 +40,14 @@
 import MarkAsSeenButton from "@/components/MarkAsSeenButton.vue";
 import RateDown from "@/components/RateDown.vue";
 import UserReviewInput from "@/components/UserReviewInput.vue";
+import DeleteMovieButton from "@/components/DeleteMovieButton.vue";
 
 export default {
   components: {
     MarkAsSeenButton,
     RateDown,
     UserReviewInput,
+    DeleteMovieButton,
   },
   props: {
     imdbID: String,
@@ -81,6 +84,11 @@ export default {
     },
     submitUserReview(review) {
       this.fetchedMovie.userReview = review;
+    },
+    async handleMovieDeleted() {
+      setTimeout(() => {
+        this.$router.push({ name: "MovieList" });
+      }, 3000);
     },
   },
 };
