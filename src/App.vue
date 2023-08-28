@@ -100,6 +100,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .movie-detail-right {
   flex: 2;
