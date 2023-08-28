@@ -29,7 +29,15 @@
         <RateDown @rating-selected="updateUserRating" />
         <UserReviewInput @review-submitted="submitUserReview" />
       </div>
-      <DeleteMovieButton :imdbID="imdbID" :onDelete="handleMovieDeleted" />
+      <div class="admin-mode">
+        <button class="edit-button" @click="toggleEditMode">Edit Movie</button>
+        <EditMovieForm
+          v-if="editingMode"
+          :movie="fetchedMovie"
+          @movie-updated="handleMovieUpdate"
+        />
+        <DeleteMovieButton :imdbID="imdbID" :onDelete="handleMovieDeleted" />
+      </div>
     </div>
     <!-- <p><strong>allComments:</strong> {{ fetchedMovie.allComments }}</p> -->
   </div>
@@ -41,6 +49,7 @@ import MarkAsSeenButton from "@/components/MarkAsSeenButton.vue";
 import RateDown from "@/components/RateDown.vue";
 import UserReviewInput from "@/components/UserReviewInput.vue";
 import DeleteMovieButton from "@/components/DeleteMovieButton.vue";
+import EditMovieForm from "@/components/EditMovieForm.vue";
 
 export default {
   components: {
@@ -48,6 +57,7 @@ export default {
     RateDown,
     UserReviewInput,
     DeleteMovieButton,
+    EditMovieForm,
   },
   props: {
     imdbID: String,
@@ -57,6 +67,7 @@ export default {
       fetchedMovie: {
         watched: false,
       },
+      editingMode: false,
     };
   },
   created() {
@@ -89,6 +100,13 @@ export default {
       setTimeout(() => {
         this.$router.push({ name: "MovieList" });
       }, 3000);
+    },
+    toggleEditMode() {
+      this.editingMode = !this.editingMode;
+    },
+    handleMovieUpdate(updatedMovie) {
+      this.fetchedMovie = updatedMovie;
+      this.editingMode = false;
     },
   },
 };
