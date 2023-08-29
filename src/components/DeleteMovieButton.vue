@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import { useMoviestore } from "@/store/mstore";
+
 export default {
   props: {
     imdbID: String,
@@ -19,8 +21,9 @@ export default {
     },
     async deleteMovie() {
       try {
+        const mstore = useMoviestore();
         const response = await fetch(
-          `http://localhost:3000/movies/${this.imdbID}`,
+          `${mstore.workingUrl + "movies/" + this.imdbID}`,
           {
             method: "DELETE",
           }

@@ -27,6 +27,8 @@
 </template>
 
 <script>
+import { useMoviestore } from "@/store/mstore";
+
 export default {
   data() {
     return {
@@ -50,7 +52,8 @@ export default {
   methods: {
     async submitForm() {
       try {
-        const response = await fetch("http://localhost:3000/", {
+        const mstore = useMoviestore();
+        const response = await fetch(`${mstore.workingUrl}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

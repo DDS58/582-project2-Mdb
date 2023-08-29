@@ -45,6 +45,7 @@
 </template>
 
 <script>
+import { useMoviestore } from "@/store/mstore";
 import MarkAsSeenButton from "@/components/MarkAsSeenButton.vue";
 import RateDown from "@/components/RateDown.vue";
 import UserReviewInput from "@/components/UserReviewInput.vue";
@@ -77,8 +78,9 @@ export default {
   methods: {
     async fetchMovieData() {
       try {
+        const mstore = useMoviestore();
         const response = await fetch(
-          `http://localhost:3000/movies/${this.imdbID}`
+          `${mstore.workingUrl + "movies/" + this.imdbID}`
         );
         const movieData = await response.json();
         this.fetchedMovie = movieData;

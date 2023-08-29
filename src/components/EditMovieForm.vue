@@ -22,6 +22,8 @@
 </template>
 
 <script>
+import { useMoviestore } from "@/store/mstore";
+
 export default {
   props: {
     movie: Object,
@@ -34,8 +36,9 @@ export default {
   methods: {
     async submitForm() {
       try {
+        const mstore = useMoviestore();
         const response = await fetch(
-          `http://localhost:3000/movies/${this.editedMovie.imdbID}`,
+          `${mstore.workingUrl + "movies/" + this.editedMovie.imdbID}`,
           {
             method: "PATCH",
             headers: {

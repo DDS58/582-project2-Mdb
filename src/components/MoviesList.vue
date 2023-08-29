@@ -15,6 +15,7 @@
 
 <script>
 // @ is an alias to /src
+import { useMoviestore } from "@/store/mstore";
 import MovieCard from "@/components/MovieCard.vue";
 import SearchBar from "@/components/SearchBar.vue";
 
@@ -36,7 +37,11 @@ export default {
   methods: {
     async fetchMovies() {
       try {
-        const response = await fetch("http://localhost:3000/");
+        // const response = await fetch(
+        //   "https://vigilant-space-winner-6696pwpw6rr2477v-3000.app.github.dev/"
+        // );
+        const mstore = useMoviestore();
+        const response = await fetch(`${mstore.workingUrl}`);
         const data = await response.json();
         this.movies = data;
       } catch (error) {
