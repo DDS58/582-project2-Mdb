@@ -37,9 +37,6 @@ export default {
   methods: {
     async fetchMovies() {
       try {
-        // const response = await fetch(
-        //   "https://vigilant-space-winner-6696pwpw6rr2477v-3000.app.github.dev/"
-        // );
         const mstore = useMoviestore();
         const response = await fetch(`${mstore.workingUrl}`);
         const data = await response.json();
