@@ -29,7 +29,7 @@
         <RateDown @rating-selected="updateUserRating" />
         <UserReviewInput @review-submitted="submitUserReview" />
       </div>
-      <div class="admin-mode">
+      <div v-if="role === 'admin'" class="admin-mode">
         <button class="edit-button" @click="toggleEditMode">Edit Movie</button>
         <EditMovieForm
           v-if="editingMode"
@@ -51,6 +51,7 @@ import RateDown from "@/components/RateDown.vue";
 import UserReviewInput from "@/components/UserReviewInput.vue";
 import DeleteMovieButton from "@/components/DeleteMovieButton.vue";
 import EditMovieForm from "@/components/EditMovieForm.vue";
+import { useUserStore } from "@/store/userstore";
 
 export default {
   components: {
@@ -109,6 +110,11 @@ export default {
     handleMovieUpdate(updatedMovie) {
       this.fetchedMovie = updatedMovie;
       this.editingMode = false;
+    },
+  },
+  computed: {
+    role() {
+      return useUserStore().role;
     },
   },
 };

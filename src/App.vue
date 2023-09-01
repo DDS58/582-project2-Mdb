@@ -1,11 +1,13 @@
 <template>
-  <nav>
+  <div class="header">
+    <h1 class="title">Mdb</h1>
     <UserAdmin @setUserRole="setUserRole" />
-    | <router-link to="/">Home</router-link> |
-    <router-link v-if="role === 'admin'" to="/add-movie"
-      >Add Movie |</router-link
-    >
+  </div>
+  <nav>
+    <router-link to="/">Home</router-link>
+    <router-link v-if="role === 'admin'" to="/add-movie">Add Movie</router-link>
   </nav>
+
   <router-view />
 </template>
 
@@ -41,16 +43,43 @@ export default {
   color: #2c3e50;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.title {
+  font-size: 40px;
+  color: red;
+}
+
 nav {
-  padding: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 
   a {
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    :hover {
+      text-decoration: underline;
+    }
 
     &.router-link-exact-active {
       color: #42b983;
     }
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
   }
 }
 
@@ -148,5 +177,15 @@ input {
   border-radius: 4px;
   resize: none;
   margin-top: 4px;
+}
+
+.admin-mode {
+  button {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+  }
 }
 </style>
