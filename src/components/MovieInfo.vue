@@ -27,7 +27,7 @@
           @update:seen="updateSeenStatus"
         />
         <RateDown @rating-selected="updateUserRating" />
-        <UserReviewInput @review-submitted="submitUserReview" />
+        <UserReviewInput @review-submitted="addReview" />
       </div>
       <div v-if="role === 'admin'" class="admin-mode">
         <button class="edit-button" @click="toggleEditMode">Edit Movie</button>
@@ -76,6 +76,7 @@ export default {
     return {
       fetchedMovie: {
         watched: false,
+        reviews: [],
       },
       editingMode: false,
     };
@@ -108,27 +109,21 @@ export default {
       this.fetchedMovie.userReview = review;
       this.postUserReview(review);
     },
-    async postUserReview(review) {
+    async addReview(newReview) {
+      this.fetchedMovie.reviews.push(newReview);
       const mstore = useMoviestore();
-      try {
-        const response = await fetch(
-          `${mstore.workingUrl + "movies/" + this.imdbID + "/review"}`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ review }),
-          }
-        );
+      const imdbID = this.imdbID;
 
-        if (response.status === 201) {
-          console.log("Review posted successfully:", response.data);
-        } else {
-          console.error("Error posting review:", response.statusText);
-        }
+      try {
+        await fetch(`${mstore.workingUrl + "movies/" + imdbID}`, {
+          method: "PATCH",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ reviews: this.fetchedMovie.reviews }),
+        });
       } catch (error) {
-        console.error("Error posting review:", error);
+        console.error("Error updating movie data:", error);
       }
     },
 
@@ -145,6 +140,7 @@ export default {
       this.editingMode = false;
     },
   },
+
   computed: {
     role() {
       return useUserStore().role;

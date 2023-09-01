@@ -46,6 +46,7 @@ export default {
         Runtime: "",
         Writer: "",
         imdbRating: "",
+        reviews: [],
       },
     };
   },
@@ -77,6 +78,7 @@ export default {
             Runtime: "",
             Writer: "",
             imdbRating: "",
+            reviews: [],
           };
         } else {
           console.error("Failed to add movie");

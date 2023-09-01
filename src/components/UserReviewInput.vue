@@ -30,7 +30,6 @@ export default {
 
       this.$emit("review-submitted", review);
       this.reviewText = "";
-      location.reload();
     },
   },
 };
