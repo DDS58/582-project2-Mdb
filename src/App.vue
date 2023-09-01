@@ -1,14 +1,31 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/Add-Movie/">Add Movie</router-link> |
+    <UserAdmin @setUserRole="setUserRole" />
+    | <router-link to="/">Home</router-link> |
+    <router-link v-if="userRole === 'admin'" to="/add-movie"
+      >Add Movie |</router-link
+    >
   </nav>
   <router-view />
 </template>
 
 <script>
+import UserAdmin from "@/components/UserAdmin.vue";
 export default {
   name: "App",
+  components: {
+    UserAdmin,
+  },
+  data() {
+    return {
+      userRole: "user1",
+    };
+  },
+  methods: {
+    setUserRole(role) {
+      this.userRole = role;
+    },
+  },
 };
 </script>
 
