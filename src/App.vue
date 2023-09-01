@@ -2,7 +2,7 @@
   <nav>
     <UserAdmin @setUserRole="setUserRole" />
     | <router-link to="/">Home</router-link> |
-    <router-link v-if="userRole === 'admin'" to="/add-movie"
+    <router-link v-if="role === 'admin'" to="/add-movie"
       >Add Movie |</router-link
     >
   </nav>
@@ -11,19 +11,22 @@
 
 <script>
 import UserAdmin from "@/components/UserAdmin.vue";
+import { useUserStore } from "@/store/userstore";
+
 export default {
   name: "App",
   components: {
     UserAdmin,
   },
-  data() {
-    return {
-      userRole: "user1",
-    };
+  computed: {
+    role() {
+      return useUserStore().role;
+    },
   },
   methods: {
     setUserRole(role) {
-      this.userRole = role;
+      const userStore = useUserStore();
+      userStore.setUserRole(role);
     },
   },
 };

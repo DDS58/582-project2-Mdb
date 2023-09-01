@@ -94,28 +94,28 @@ app.post("/", (req, res) => {
   // res.send("Sent data via POST!");
 });
 
-app.put("/:id", (req, res) => {
-  const client = new MongoClient(uri);
-  const updatedMovie = req.body;
+// app.put("/:id", (req, res) => {
+//   const client = new MongoClient(uri);
+//   const updatedMovie = req.body;
 
-  async function run() {
-    try {
-      const database = client.db("mdb");
-      const moviesdb = database.collection("moviesdb");
-      const result = await moviesdb.updateOne(
-        { _id: new ObjectId(req.params.id) },
-        { $set: updatedMovie }
-      );
+//   async function run() {
+//     try {
+//       const database = client.db("mdb");
+//       const moviesdb = database.collection("moviesdb");
+//       const result = await moviesdb.updateOne(
+//         { _id: new ObjectId(req.params.id) },
+//         { $set: updatedMovie }
+//       );
 
-      console.log(result);
-      res.send(result);
-    } finally {
-      await client.close();
-    }
-  }
+//       console.log(result);
+//       res.send(result);
+//     } finally {
+//       await client.close();
+//     }
+//   }
 
-  run().catch(console.dir);
-});
+//   run().catch(console.dir);
+// });
 
 app.delete("/movies/:imdbID", (req, res) => {
   const client = new MongoClient(uri);
