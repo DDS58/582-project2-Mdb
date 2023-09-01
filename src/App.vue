@@ -9,6 +9,9 @@
   </nav>
 
   <router-view />
+  <div class="footer">
+    <p>&copy; 2023 Mdb</p>
+  </div>
 </template>
 
 <script>
@@ -35,24 +38,28 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  background-color: #18191aff;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
+  padding: 0 30px;
 }
 
 .title {
   font-size: 40px;
-  color: red;
+  color: #00568cff;
 }
 
 nav {
@@ -62,16 +69,20 @@ nav {
   justify-content: center;
 
   a {
-    font-weight: bold;
-    color: #2c3e50;
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 8px 16px;
+
     :hover {
       text-decoration: underline;
     }
 
     &.router-link-exact-active {
-      color: #42b983;
+      background-color: #242526ff;
+      color: #00568cff;
+      font-weight: bold;
     }
   }
   ul {
@@ -84,7 +95,7 @@ nav {
 }
 
 .search-bar {
-  margin-bottom: 20px;
+  margin: 20px;
   text-align: center;
 }
 
@@ -105,7 +116,8 @@ input {
 }
 
 .movie-card {
-  border: 1px solid black;
+  border: 1px solid white;
+  background-color: #242526ff;
   padding: 10px;
   margin: 10px;
   width: 200px;
@@ -131,6 +143,14 @@ input {
   margin: 0 auto;
 }
 
+.back-link {
+  display: flex;
+  color: white;
+  border-radius: 4px;
+  padding: 8px 16px;
+  justify-content: center;
+}
+
 .movie-detail {
   display: flex;
   margin: 20px;
@@ -142,6 +162,13 @@ input {
   .movie-title {
     font-size: 20px;
     margin-bottom: 5px;
+  }
+  button {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
   }
 }
 .movie-detail-left {
@@ -157,12 +184,13 @@ input {
   font-size: 14px;
   margin: 5px 0;
   text-align: left;
+  background-color: #242526ff;
 }
 
 .usersInput button {
   padding: 8px 16px;
   font-size: 14px;
-  background-color: black;
+  background-color: #00568cff;
   color: white;
   border: none;
   border-radius: 4px;
@@ -173,10 +201,19 @@ input {
   width: 100%;
   padding: 10px;
   font-size: 14px;
-  border: 1px solid black;
+  border: 1px solid #00568cff;
   border-radius: 4px;
   resize: none;
   margin-top: 4px;
+}
+
+.active {
+  color: #00568cff;
+  background-color: #242526ff;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 8px 16px;
 }
 
 .admin-mode {
@@ -186,6 +223,15 @@ input {
     border: none;
     border-radius: 4px;
     padding: 8px 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .movie-detail {
+    display: block;
+    input {
+      width: 100%;
+    }
   }
 }
 </style>
