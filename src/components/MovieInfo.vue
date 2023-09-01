@@ -38,6 +38,14 @@
         />
         <DeleteMovieButton :imdbID="imdbID" :onDelete="handleMovieDeleted" />
       </div>
+      <div class="movie-reviews">
+        <h3>User Reviews</h3>
+        <ul>
+          <p v-for="(review, index) in fetchedMovie.reviews" :key="index">
+            <strong>{{ review.user }}:</strong> {{ review.text }}
+          </p>
+        </ul>
+      </div>
     </div>
     <!-- <p><strong>allComments:</strong> {{ fetchedMovie.allComments }}</p> -->
   </div>
@@ -98,7 +106,32 @@ export default {
     },
     submitUserReview(review) {
       this.fetchedMovie.userReview = review;
+      this.postUserReview(review);
     },
+    async postUserReview(review) {
+      const mstore = useMoviestore();
+      try {
+        const response = await fetch(
+          `${mstore.workingUrl + "movies/" + this.imdbID + "/review"}`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ review }),
+          }
+        );
+
+        if (response.status === 201) {
+          console.log("Review posted successfully:", response.data);
+        } else {
+          console.error("Error posting review:", response.statusText);
+        }
+      } catch (error) {
+        console.error("Error posting review:", error);
+      }
+    },
+
     async handleMovieDeleted() {
       setTimeout(() => {
         this.$router.push({ name: "MovieList" });

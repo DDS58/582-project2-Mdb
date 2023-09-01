@@ -74,24 +74,30 @@ app.patch("/movies/:imdbID", async (req, res) => {
   }
 });
 
-app.post("/", (req, res) => {
-  console.log(req.body);
+app.post("/movies/:imdbID/review", async (req, res) => {
   const client = new MongoClient(uri);
-  async function run() {
-    try {
-      const database = client.db("mdb");
-      const moviesdb = database.collection("moviesdb");
-      const result = await moviesdb.insertOne(req.body);
-      console.log(result);
-      res.send(result);
-    } finally {
-      // Ensures that the client will close when you finish/error
-      await client.close();
-    }
-  }
-  run().catch(console.dir);
 
-  // res.send("Sent data via POST!");
+  try {
+    await client.connect();
+    const database = client.db("mdb");
+    const moviesdb = database.collection("moviesdb");
+
+    const imdbID = req.params.imdbID;
+    const { review } = req.body;
+
+    const result = await moviesdb.updateOne(
+      { imdbID },
+      {
+        $push: { reviews: review },
+      }
+    );
+
+    console.log(result);
+  } catch (error) {
+    console.error("Error posting review:", error);
+  } finally {
+    await client.close();
+  }
 });
 
 // app.put("/:id", (req, res) => {

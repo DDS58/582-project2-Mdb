@@ -198,7 +198,7 @@ input {
 }
 
 .usersInput textarea {
-  width: 100%;
+  width: 97%;
   padding: 10px;
   font-size: 14px;
   border: 1px solid #00568cff;
@@ -230,7 +230,7 @@ input {
   .movie-detail {
     display: block;
     input {
-      width: 100%;
+      width: 97%;
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <textarea
-      v-model="review"
+      v-model="reviewText"
       rows="5"
       placeholder="Write your review here..."
     ></textarea>
@@ -10,16 +10,27 @@
 </template>
 
 <script>
+import { useUserStore } from "@/store/userstore";
+
 export default {
   data() {
     return {
-      review: "",
+      reviewText: "",
     };
   },
   methods: {
     submitReview() {
-      this.$emit("review-submitted", this.review);
-      this.review = "";
+      const userStore = useUserStore();
+      const currentUserRole = userStore.role;
+
+      const review = {
+        user: currentUserRole,
+        text: this.reviewText,
+      };
+
+      this.$emit("review-submitted", review);
+      this.reviewText = "";
+      location.reload();
     },
   },
 };
