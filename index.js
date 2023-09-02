@@ -59,12 +59,14 @@ app.patch("/movies/:imdbID", async (req, res) => {
     const moviesdb = database.collection("moviesdb");
 
     const imdbID = req.params.imdbID;
-    const { reviews, watched, ...updatedFields } = req.body;
+    const existingMovie = await moviesdb.findOne({ imdbID });
 
-    const result = await moviesdb.updateOne(
-      { imdbID },
-      { $set: { reviews, watched, ...updatedFields } }
-    );
+    const updatedMovie = {
+      ...existingMovie,
+      ...req.body,
+    };
+
+    const result = await moviesdb.replaceOne({ imdbID }, updatedMovie);
     console.log(result);
     res.send(result);
   } catch (error) {
