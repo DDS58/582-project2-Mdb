@@ -47,7 +47,6 @@
         </ul>
       </div>
     </div>
-    <!-- <p><strong>allComments:</strong> {{ fetchedMovie.allComments }}</p> -->
   </div>
   <div v-else>Loading movie data...</div>
 </template>
