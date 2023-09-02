@@ -40,36 +40,24 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True",
-  "allComments": [
+  "reviews": [
     {
-      "id": 1,
-      "name": "John",
-      "comment": "This is a comment",
-      "date": "2021-01-01",
-      "movieId": 1
+      "user": "admin",
+      "text": "sooo funny!~",
+      "rating": "10"
     },
     {
-      "id": 2,
-      "name": "Mary",
-      "comment": "This is another comment",
-      "date": "2021-01-02",
-      "movieId": 1
+      "user": "user1",
+      "text": "will watch again!!!",
+      "rating": "10"
     },
     {
-      "id": 3,
-      "name": "John",
-      "comment": "This is a comment",
-      "date": "2021-01-01",
-      "movieId": 1
-    },
-    {
-      "id": 4,
-      "name": "Mary",
-      "comment": "This is another comment",
-      "date": "2021-01-02",
-      "movieId": 1
+      "user": "user2",
+      "text": "love it!",
+      "rating": "10"
     }
-  ]
+  ],
+  "watched": true
 },
 {
   "_id": {
@@ -113,34 +101,12 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True",
-  "allComments": [
+  "watched": false,
+  "reviews": [
     {
-      "id": 1,
-      "name": "John",
-      "comment": "This is a comment",
-      "date": "2021-01-01",
-      "movieId": 2
-    },
-    {
-      "id": 2,
-      "name": "Mary",
-      "comment": "This is another comment",
-      "date": "2021-01-02",
-      "movieId": 2
-    },
-    {
-      "id": 3,
-      "name": "John",
-      "comment": "This is a comment",
-      "date": "2021-01-01",
-      "movieId": 2
-    },
-    {
-      "id": 4,
-      "name": "Mary",
-      "comment": "This is another comment",
-      "date": "2021-01-02",
-      "movieId": 2
+      "user": "admin",
+      "text": "so funny",
+      "rating": "10"
     }
   ]
 },
@@ -186,34 +152,12 @@
   "Production": "N/A",
   "Website": "N/A",
   "Response": "True",
-  "allComments": [
+  "watched": true,
+  "reviews": [
     {
-      "id": 1,
-      "name": "John",
-      "comment": "This is a comment",
-      "date": "2021-01-01",
-      "movieId": 3
-    },
-    {
-      "id": 2,
-      "name": "Mary",
-      "comment": "This is another comment",
-      "date": "2021-01-02",
-      "movieId": 3
-    },
-    {
-      "id": 3,
-      "name": "John",
-      "comment": "This is a comment",
-      "date": "2021-01-01",
-      "movieId": 3
-    },
-    {
-      "id": 4,
-      "name": "Mary",
-      "comment": "This is another comment",
-      "date": "2021-01-02",
-      "movieId": 3
+      "user": "admin",
+      "text": "what a revenge",
+      "rating": "10"
     }
   ]
 },
@@ -258,7 +202,8 @@
   "BoxOffice": "$4,845,631",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -293,7 +238,8 @@
   "BoxOffice": "N/A",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -332,7 +278,8 @@
   "BoxOffice": "N/A",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -375,7 +322,15 @@
   "BoxOffice": "$296,374,621",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": [
+    {
+      "user": "admin",
+      "text": "Can't wait to see the end!",
+      "rating": 9
+    }
+  ],
+  "watched": null
 },
 {
   "_id": {
@@ -418,7 +373,9 @@
   "BoxOffice": "$858,373,000",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "watched": null,
+  "reviews": []
 },
 {
   "_id": {
@@ -453,7 +410,8 @@
   "BoxOffice": "N/A",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -496,7 +454,8 @@
   "BoxOffice": "$172,076,928",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -539,7 +498,8 @@
   "BoxOffice": "$285,761,243",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -575,7 +535,8 @@
   "imdbID": "tt0903747",
   "Type": "series",
   "totalSeasons": "5",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -607,7 +568,8 @@
   "imdbID": "tt0773262",
   "Type": "series",
   "totalSeasons": "8",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -650,7 +612,9 @@
   "BoxOffice": "$534,987,076",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "watched": false,
+  "reviews": []
 },
 {
   "_id": {
@@ -693,7 +657,9 @@
   "BoxOffice": "$330,455,270",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "watched": false,
+  "reviews": []
 },
 {
   "_id": {
@@ -725,7 +691,15 @@
   "imdbID": "tt5141800",
   "Type": "series",
   "totalSeasons": "2",
-  "Response": "True"
+  "Response": "True",
+  "reviews": [
+    {
+      "user": "user1",
+      "text": "the best series",
+      "rating": "10"
+    }
+  ],
+  "watched": true
 },
 {
   "_id": {
@@ -768,7 +742,21 @@
   "BoxOffice": "$19,501,238",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": [
+    {
+      "user": "user1",
+      "text": "a classic",
+      "rating": "10"
+    },
+    {
+      "user": "user2",
+      "text": "i got myself the same glasses now",
+      "rating": "10"
+    }
+  ],
+  "userRole": null,
+  "watched": null
 },
 {
   "_id": {
@@ -811,7 +799,9 @@
   "BoxOffice": "$53,369,749",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "watched": false,
+  "reviews": null
 },
 {
   "_id": {
@@ -854,7 +844,8 @@
   "BoxOffice": "$169,659",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -897,7 +888,14 @@
   "BoxOffice": "$342,952,511",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": [
+    {
+      "user": "user1",
+      "text": "This was so good!"
+    }
+  ],
+  "watched": null
 },
 {
   "_id": {
@@ -940,7 +938,8 @@
   "BoxOffice": "$60,239",
   "Production": "N/A",
   "Website": "N/A",
-  "Response": "True"
+  "Response": "True",
+  "reviews": []
 },
 {
   "_id": {
@@ -972,5 +971,18 @@
   "imdbID": "tt0944947",
   "Type": "series",
   "totalSeasons": "8",
-  "Response": "True"
+  "Response": "True",
+  "watched": true,
+  "reviews": [
+    {
+      "user": "user1",
+      "text": "bad end",
+      "rating": 9
+    },
+    {
+      "user": "admin",
+      "text": "nice dragon",
+      "rating": "10"
+    }
+  ]
 }]
