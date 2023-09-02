@@ -1,10 +1,10 @@
 <template>
-  ⭐
   <select v-model="selectedRating" @change="selectRating">
     <option v-for="rating in ratings" :key="rating" :value="rating">
       {{ rating }}
     </option>
   </select>
+  ⭐
 </template>
 
 <script>

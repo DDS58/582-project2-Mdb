@@ -26,7 +26,6 @@
           :seen="fetchedMovie.watched"
           @update:seen="updateSeenStatus"
         />
-        <RateDown @rating-selected="updateUserRating" />
         <UserReviewInput @review-submitted="addReview" />
       </div>
       <div v-if="role === 'admin'" class="admin-mode">
@@ -42,7 +41,8 @@
         <h3>User Reviews</h3>
         <ul>
           <p v-for="(review, index) in fetchedMovie.reviews" :key="index">
-            <strong>{{ review.user }}:</strong> {{ review.text }}
+            {{ review.rating }}⭐ <strong>{{ review.user }}:</strong>
+            {{ review.text }}
           </p>
         </ul>
       </div>
@@ -55,7 +55,6 @@
 <script>
 import { useMoviestore } from "@/store/mstore";
 import MarkAsSeenButton from "@/components/MarkAsSeenButton.vue";
-import RateDown from "@/components/RateDown.vue";
 import UserReviewInput from "@/components/UserReviewInput.vue";
 import DeleteMovieButton from "@/components/DeleteMovieButton.vue";
 import EditMovieForm from "@/components/EditMovieForm.vue";
@@ -64,7 +63,6 @@ import { useUserStore } from "@/store/userstore";
 export default {
   components: {
     MarkAsSeenButton,
-    RateDown,
     UserReviewInput,
     DeleteMovieButton,
     EditMovieForm,
