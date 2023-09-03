@@ -7,12 +7,11 @@ app.use(cors());
 
 const bodyParser = require("body-parser");
 
-const { MongoClient, ObjectId } = require("mongodb");
+const { MongoClient } = require("mongodb");
 // Replace the uri string with your connection string.
 const uri =
   "mongodb+srv://2295458:X4191mSgKbpiW66a@cluster0.7kgqken.mongodb.net/";
 
-// parse application/json
 app.use(bodyParser.json());
 
 app.get("/", (req, res) => {
@@ -38,12 +37,10 @@ app.get("/movies/:imdbID", (req, res) => {
     try {
       const database = client.db("mdb");
       const moviesdb = database.collection("moviesdb");
-      // const result = await moviesdb.find({}).toArray();
       const result = await moviesdb.findOne({ imdbID });
       console.log(result);
       res.send(result);
     } finally {
-      // Ensures that the client will close when you finish/error
       await client.close();
     }
   }
@@ -88,36 +85,11 @@ app.post("/", (req, res) => {
       console.log(result);
       res.send(result);
     } finally {
-      // Ensures that the client will close when you finish/error
       await client.close();
     }
   }
   run().catch(console.dir);
-  // res.send("Sent data via POST!");
 });
-
-// app.put("/:id", (req, res) => {
-//   const client = new MongoClient(uri);
-//   const updatedMovie = req.body;
-
-//   async function run() {
-//     try {
-//       const database = client.db("mdb");
-//       const moviesdb = database.collection("moviesdb");
-//       const result = await moviesdb.updateOne(
-//         { _id: new ObjectId(req.params.id) },
-//         { $set: updatedMovie }
-//       );
-
-//       console.log(result);
-//       res.send(result);
-//     } finally {
-//       await client.close();
-//     }
-//   }
-
-//   run().catch(console.dir);
-// });
 
 app.delete("/movies/:imdbID", (req, res) => {
   const client = new MongoClient(uri);
