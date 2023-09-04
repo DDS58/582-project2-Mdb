@@ -99,13 +99,13 @@ export default {
     updateSeenStatus(newSeenStatus) {
       this.fetchedMovie.watched = newSeenStatus;
     },
-    updateUserRating(newRating) {
-      this.fetchedMovie.userRating = newRating;
-    },
-    submitUserReview(review) {
-      this.fetchedMovie.userReview = review;
-      this.postUserReview(review);
-    },
+    // updateUserRating(newRating) {
+    //   this.fetchedMovie.userRating = newRating;
+    // },
+    // submitUserReview(review) {
+    //   this.fetchedMovie.userReview = review;
+    //   this.postUserReview(review);
+    // },
     async addReview(newReview) {
       this.fetchedMovie.reviews.push(newReview);
       const mstore = useMoviestore();
