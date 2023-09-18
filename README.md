@@ -29,7 +29,7 @@
 - +recommend/other movie view? (loop movie display on smaller banner style under title view)
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="https://david58.web582.com/img/Mdb-Home-cut.png" alt="Home" width="48%">
+  <img src="https://david58.web582.com/img/Mdb-Home-cut2.png" alt="Home" width="48%">
   <img src="https://david58.web582.com/img/Mdb-Page2.png" alt="MovieInfo" width="48%">
 </div>
 
