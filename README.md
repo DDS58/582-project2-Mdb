@@ -1,3 +1,6 @@
+https://david58.web582.com/framework/Mdb/
+Try it out!
+
 # Mdb My Movie Database (MEVN stack)
 
 ## Planning
@@ -26,7 +29,6 @@
 - home view (movieslist, search bar)
 - title view (movie item data, rating, comment components)
 - Admin, add movie info
-- +recommend/other movie view? (loop movie display on smaller banner style under title view)
 
 <div style="display: flex; justify-content: space-between;">
   <img src="https://david58.web582.com/img/Mdb-Home-cut2.png" alt="Home" width="48%">
@@ -44,6 +46,7 @@ npm install
 ```
 npm run serve
 ```
+node index.js ( need to set port to public )
 
 ### Compiles and minifies for production
 
